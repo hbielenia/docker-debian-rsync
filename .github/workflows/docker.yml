@@ -73,7 +73,7 @@ jobs:
         if: inputs.latest
         uses: hbielenia/docker-build-action@7211d36e8ed0a62e6ef2f8610b734896e93d8190 # 0.2.0
         with:
-          dockerfile: ./dockerfiles/${{ env.DEBIAN_VERSION }}.Dockerfile
+          dockerfile: ./dockerfiles/${{ inputs.debian_version }}.Dockerfile
           from_cache: '1'
           push: '1'
           tags: >-
