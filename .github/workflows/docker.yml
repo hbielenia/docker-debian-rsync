@@ -60,6 +60,7 @@ jobs:
           from_cache: '1'
           push: '1'
           tags: >-
+            ${{ env.DOCKERHUB_REPO }}:${{ inputs.debian_version }},
             ${{ env.DOCKERHUB_REPO }}:${{ env.RSYNC_VERSION_MINOR }}-${{ inputs.debian_version }},
             ${{ env.DOCKERHUB_REPO }}:${{ env.RSYNC_VERSION_MINOR }}.${{ env.RSYNC_VERSION_PATCH }}-${{ inputs.debian_version }},
             ${{ env.DOCKERHUB_REPO }}:${{ env.RSYNC_VERSION_MINOR }}.${{ env.RSYNC_VERSION_PATCH }}-${{ env.RSYNC_VERSION_PACKAGE }}-${{ inputs.debian_version }},
