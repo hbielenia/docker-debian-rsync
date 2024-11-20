@@ -1,0 +1,35 @@
+# docker-debian-rsync - Docker configuration for rsync on Debian
+# Written in 2024 by Hubert Bielenia <hbielenia@users.noreply.github.com>
+# To the extent possible under law, the author(s) have dedicated all copyright and related
+# and neighboring rights to this software to the public domain worldwide. This software
+# is distributed without any warranty.
+# You should have received a copy of the CC0 Public Domain Dedication along with this software.
+# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+name: docker-bullseye-slim
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'dockerfiles/bullseye-slim.Dockerfile'
+      - '.github/workflows/docker-bullseye-slim.yml'
+      - '.github/workflows/docker.yml'
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+      - reopened
+    paths:
+      - 'dockerfiles/bullseye-slim.Dockerfile'
+      - '.github/workflows/docker-bullseye-slim.yml'
+      - '.github/workflows/docker.yml'
+jobs:
+  image:
+    uses: ./.github/workflows/docker.yml
+    secrets: inherit
+    with:
+      debian_version: bullseye-slim
+      push: ${{ github.event_name == 'push' }}
+
