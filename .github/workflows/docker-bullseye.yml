@@ -31,5 +31,6 @@ jobs:
     secrets: inherit
     with:
       debian_version: bullseye
+      latest: true
       push: ${{ github.event_name == 'push' }}
 
