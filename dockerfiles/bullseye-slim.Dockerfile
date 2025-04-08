@@ -11,7 +11,7 @@
 FROM debian:bullseye-slim@sha256:60a596681410bd31a48e5975806a24cd78328f3fd6b9ee5bc64dca6d46a51f29
 RUN adduser --disabled-password --no-create-home --uid 1000 rsync
 RUN apt-get update \
-	&& apt-get install -y rsync=3.2.3-4+deb11u1 \
+	&& apt-get install -y rsync=3.2.3-4+deb11u3 \
 	&& rm -rf /var/lib/apt/lists/*
 USER 1000:1000
 ENTRYPOINT [ "/usr/bin/rsync" ]

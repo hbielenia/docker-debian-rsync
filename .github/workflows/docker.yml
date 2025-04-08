@@ -23,7 +23,7 @@ env:
   RSYNC_VERSION_MINOR: '3.2'
   RSYNC_VERSION_PATCH: '3'
   RSYNC_VERSION_PACKAGE: '4'
-  RSYNC_VERSION_DEBIAN: 'deb11u1'
+  RSYNC_VERSION_DEBIAN: 'deb11u3'
   DOCKERHUB_REPO: ${{ vars.DOCKERHUB_USERNAME }}/debian-rsync
   GHCR_REPO: ghcr.io/${{ github.repository }}
 jobs:
