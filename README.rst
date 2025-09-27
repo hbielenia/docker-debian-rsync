@@ -19,10 +19,10 @@ Images
 ======
 The currently built images are:
 - ``3.2``, also tagged ``3.2-bullseye``, ``3.2.3``, ``3.2.3-bullseye``,
-  ``3.2.3-4-bullseye``, ``3.2.3-4-deb11u1-bullseye`` and ``latest``.
+  ``3.2.3-4-bullseye``, ``3.2.3-4-deb11u3-bullseye`` and ``latest``.
 - ``3.2-slim``, also tagged ``3.2-bullseye-slim``, ``3.2.3-slim``,
   ``3.2.3-bullseye-slim``, ``3.2.3-4-bullseye-slim``,
-  ``3.2.3-4-deb11u1-bullseye-slim`` and ``latest-slim``.
+  ``3.2.3-4-deb11u3-bullseye-slim`` and ``latest-slim``.
 
 Usage
 =====
@@ -77,3 +77,4 @@ into public domain. See ``COPYING.txt`` for full license text.
 .. _GitHub Issues: https://github.com/hbielenia/docker-rsync/issues
 .. _Discussions: https://github.com/hbielenia/docker-rsync/discussions
 .. _CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
