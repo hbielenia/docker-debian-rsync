@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build Docker image
-        uses: hbielenia/docker-build-action@2dd2f6d3d269aa3e95e4ac232d2714c1c67453a0 # 0.2.4
+        uses: hbielenia/docker-build-action@00fd561acdd69659bf40cc2de3a3d79d05d58f43 # 0.3.0
         with:
           dockerfile: ./dockerfiles/${{ inputs.debian_version }}.Dockerfile
           tags: ${{ env.DOCKERHUB_REPO }}:latest
@@ -54,7 +54,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Push Docker image
-        uses: hbielenia/docker-build-action@2dd2f6d3d269aa3e95e4ac232d2714c1c67453a0 # 0.2.4
+        uses: hbielenia/docker-build-action@00fd561acdd69659bf40cc2de3a3d79d05d58f43 # 0.3.0
         with:
           dockerfile: ./dockerfiles/${{ inputs.debian_version }}.Dockerfile
           from_cache: '1'
@@ -71,7 +71,7 @@ jobs:
             ${{ env.GHCR_REPO }}:${{ env.RSYNC_VERSION_MINOR }}.${{ env.RSYNC_VERSION_PATCH }}-${{ env.RSYNC_VERSION_PACKAGE }}-${{ env.RSYNC_VERSION_DEBIAN }}-${{ inputs.debian_version }},
       - name: Push generic tags
         if: inputs.latest
-        uses: hbielenia/docker-build-action@2dd2f6d3d269aa3e95e4ac232d2714c1c67453a0 # 0.2.4
+        uses: hbielenia/docker-build-action@00fd561acdd69659bf40cc2de3a3d79d05d58f43 # 0.3.0
         with:
           dockerfile: ./dockerfiles/${{ inputs.debian_version }}.Dockerfile
           from_cache: '1'
@@ -83,3 +83,4 @@ jobs:
             ${{ env.GHCR_REPO }}:latest,
             ${{ env.GHCR_REPO }}:${{ env.RSYNC_VERSION_MINOR }},
             ${{ env.GHCR_REPO }}:${{ env.RSYNC_VERSION_MINOR }}.${{ env.RSYNC_VERSION_PATCH }},
+
