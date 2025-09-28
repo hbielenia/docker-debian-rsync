@@ -74,6 +74,7 @@ into public domain. See ``COPYING.txt`` for full license text.
 .. _Docker Hub: https://hub.docker.com/
 .. _hbielenia/debian-rsync: https://hub.docker.com/r/hbielenia/debian-rsync
 .. _GitHub Container Registry: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+.. _rsync documentation: https://download.samba.org/pub/rsync/rsync.1
 .. _Docker Engine: https://docs.docker.com/engine/
 .. _GitHub Issues: https://github.com/hbielenia/docker-rsync/issues
 .. _Discussions: https://github.com/hbielenia/docker-rsync/discussions
