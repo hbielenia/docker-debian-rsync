@@ -36,7 +36,7 @@ jobs:
           dockerfile: ./dockerfiles/${{ inputs.debian_version }}.Dockerfile
           tags: ${{ env.DOCKERHUB_REPO }}:latest
       - name: Test the built image
-        run: docker run --rm ${{ env.DOCKERHUB_REPO }}:latest mypy --version
+        run: docker run --rm ${{ env.DOCKERHUB_REPO }}:latest --version
   upload:
     if: inputs.push
     needs: build
