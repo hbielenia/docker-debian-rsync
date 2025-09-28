@@ -18,6 +18,7 @@ as ``ghcr.io/hbielenia/docker-debian-rsync``.
 Images
 ======
 The currently built images are:
+
 - ``3.2``, also tagged ``3.2-bullseye``, ``3.2.3``, ``3.2.3-bullseye``,
   ``3.2.3-4-bullseye``, ``3.2.3-4-deb11u3-bullseye`` and ``latest``.
 - ``3.2-slim``, also tagged ``3.2-bullseye-slim``, ``3.2.3-slim``,
@@ -73,6 +74,7 @@ into public domain. See ``COPYING.txt`` for full license text.
 .. _Docker Hub: https://hub.docker.com/
 .. _hbielenia/debian-rsync: https://hub.docker.com/r/hbielenia/debian-rsync
 .. _GitHub Container Registry: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+.. _rsync documentation: https://download.samba.org/pub/rsync/rsync.1
 .. _Docker Engine: https://docs.docker.com/engine/
 .. _GitHub Issues: https://github.com/hbielenia/docker-rsync/issues
 .. _Discussions: https://github.com/hbielenia/docker-rsync/discussions
