@@ -8,7 +8,7 @@
 # You should have received a copy of the CC0 Public Domain Dedication along with this software.
 # If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-FROM debian:bullseye-slim@sha256:60a596681410bd31a48e5975806a24cd78328f3fd6b9ee5bc64dca6d46a51f29
+FROM debian:bullseye-slim@sha256:6d3c63184632046054ae709964befc943ecffa140adc697ca955a10002a79c08
 RUN adduser --disabled-password --no-create-home --uid 1000 rsync
 RUN apt-get update \
 	&& apt-get install -y rsync=3.2.3-4+deb11u3 \
@@ -16,3 +16,4 @@ RUN apt-get update \
 USER 1000:1000
 ENTRYPOINT [ "/usr/bin/rsync" ]
 CMD [ "--help" ]
+
