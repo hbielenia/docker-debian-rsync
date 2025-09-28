@@ -18,6 +18,7 @@ as ``ghcr.io/hbielenia/docker-debian-rsync``.
 Images
 ======
 The currently built images are:
+
 - ``3.2``, also tagged ``3.2-bullseye``, ``3.2.3``, ``3.2.3-bullseye``,
   ``3.2.3-4-bullseye``, ``3.2.3-4-deb11u3-bullseye`` and ``latest``.
 - ``3.2-slim``, also tagged ``3.2-bullseye-slim``, ``3.2.3-slim``,
